@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Animate CSS Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Link to Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!--Link to Oswald google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <title>Zaraffa: Vincent Besuyen</title>
+
+  <!-- Link to Font awesome -->
+  <script src="https://kit.fontawesome.com/4b3e536708.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data data-offset="0">
+  <!-- The new navbar section, with clean logo and scroll effect.  -->
+  <nav class="navbar navbar-dark navbar-expand justify-content-between fixed-top" id="navbar">
+    <a class="navbar-brand" href="#">
+      <img class="zaraffalogo" src="./Media/zaraffalogotransparantBig.png" alt="Zaraffa logo">
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navlinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="navlinks">
+      <ul class="navbar-nav ms-auto me-5">
+        <!-- Nav bar items -->
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#AboutMe">About Me</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#SoftwareEngineering">Software Engineering</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#Connect">Connect</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#Music">Music</a>
+        </li>
+        <li class="nav-item p-15">
+          <a class="nav-link text-light" href="#Gallery">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+  <!-- ======================Homepage======================= -->
+  <section class="home" id="home"></section>
+  <div class="divider"></div>
+
+  <!-- ======================About Me ======================= -->
+  <section class="aboutme" id="AboutMe">
+    <div class="aboutmeContainer">
+      <img class="aboutme_img" src="./Media/aboutme2.jpg" alt="man jumping on a dune">
+      <div class="aboutme_overlay collapse collapse-horizontal" id="collapseOverlay">
+        <h2 class="aboutmeHeader">Hi, I'm Vincent.</h2>
+        <p class="aboutmeText">
+          At a first glance you might think: a software developer and DJ in one. How weird! However, music has been my
+          passion and solving complex problems my skill set. Both rather technical, but always delivering for
+          others.<br><br>
+          Scroll down for the projects I’ve delivered or to enjoy my sets. Want to connect or collaborate? Just scroll
+          down
+          some more for all the contact details.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+  <!-- ======================Software Engineering Portfolio======================= -->
+  <section class="container align-items-center px-5" id="SoftwareEngineering">
+    <div class="col12 iconheader text-center">
+      <h2 class="pt-5 pb-3">Software Engineering Portfolio</h2>
+      <hr class="primary">
+    </div>
+    <div class="row mt-5 g-1">
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fas fa-3x fa-paint-brush"></i>
+          <div class="card-body">
+            <h4 class="card-title">Canvas</h4>
+            <p class="card-text">A fully functional web-based drawing application.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fab fa-3x fa-react"></i>
+          <div class="card-body">
+            <h4 class="card-title">Noted</h4>
+            <p class="card-text">A React Native note taking application.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fab fa-3x fa-ethereum"></i>
+          <div class="card-body">
+            <h4 class="card-title">DAOPP</h4>
+            <p class="card-text">Decentralized application enabling DAO's to improve their governance mechanisms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-xl-3 text-center">
+        <div>
+          <i class="fa-3x far fa-file-audio"></i>
+          <div class="card-body">
+            <h4 class="card-title">Quality Check</h4>
+            <p class="card-text">DJ tool scanning batches of music files to determine their true sample frequencies and
+              bitrates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <div class="divider"></div>
+
+  <!-- ======================Contact Me======================= -->
+  <section class="connect container-fluid" id="Connect">
+    <div class="connectContainer">
+      <img class="connect_img" src="./Media/contactpage.jpg" alt="man sitting on bench">
+      <div class="connect_overlay collapse collapse-horizontal" id="collapseOverlay">
+        <form class="connectText text-center d-flex flex-column" action="mailto:vincentbesuyen@gmail.com"
+          enctype="multipart/form-data" method="post" class="form">
+          <h3>Connect:</h3>
+          <div class="name">
+            Name <input type="text" name="name"><br>
+          </div>
+          <div class="topic">
+            Topic <input type="text" name="topic" value="What is on your mind?"><br>
+          </div>
+          <div class="message">
+            Message <textarea type="text" name="message" id="messagebox"></textarea><br>
+          </div>
+          <div id="formbutton">
+            <input class="btn btn-outline-light text-reset" type="submit" name="submit" value="Send" id="sendbutton">
+          </div>
+          <div class="pt-2">or:</div>
+          <div class="sesocialscontainer">
+            <div class="logobuttonwrappers">
+              <a href="https://github.com/VinBes" title="VinBes GitHub" target="_blank">
+                <img class="logobuttons" src="/Media/Devicons/github.png" alt="github logo">
+              </a>
+            </div>
+            <div class="logobuttonwrappers">
+              <a href="https://www.linkedin.com/in/vincentbesuyen/" title="Linkedin" target="_blank">
+                <img class="logobuttons" src="/Media/Devicons/linkedin-logo.png" alt="linkedin logo">
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+
+  <!-- This section is about my music and djing. -->
+  <div class="dividerphoto" id="Music"></div>
+  <div class="divider"></div>
+  <section class="musicSection container-fluid">
+    <div class="row text-center">
+      <div class="col-xs-12 col-lg-4 embed-responsive">
+        <iframe class="deasy" src="https://www.youtube.com/embed/jUyumFzX6A8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div>
+      <div class="col-xs-12 col-lg-4 d-flex flex-column justify-content-between align-items-center">
+        <img class="vencelogo pt-4" src="./Media/vencelogotransparantBig.png" alt="Vence logo">
+        <div class="col-lg-12 vencesoundcloud">
+          <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1043724064&color=%23282828&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <div style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              ">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-4 px-5">
+        <div>
+          Born in the Netherlands, based in Hong Kong, Vence is always looking
+          to share new experiences and love for music. Passionately exploring
+          sounds across the electronic spectrum feeling into what is good.
+          <br /><br>
+          Vence started playing music in local The Hague venues, and soon made
+          his way to the rooftop parties of Barcelona. As he moved further
+          south, he found a second home in Tunisian clubs and festivals.
+          <br /><br>
+          After moving to Hong Kong he joined the Sol Passion agency and is
+          steadily gaining traction in the city's vibrant electronic music
+          scene.
+        </div>
+        <div class="row col-xs-6 col-lg-12">
+          <div class="col-12 pt-5 text-decoration-underline">Follow Vence:</div>
+          <div class="col-4">
+            <a href="https://soundcloud.com/soundsofvence" title="Vence Soundcloud" target="_blank">
+              <img class="logobuttons p-4" src="./Media/Devicons/soundcloud.png" alt="soundcloud logo">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.facebook.com/soundsofvence" title="Vence Facebook" target="_blank">
+              <img class="logobuttons p-4" src="./Media/Devicons/facebook.png" alt="facebook logo">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.instagram.com/soundsofvence/" title="Vnce Instagram" target="_blank">
+              <img class="logobuttons p-4" src="./Media/Devicons/instagram.png" alt="instagram logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+  <!-- ========Gallery Section==============
+  fadin effects, links to different sections per theme that 
+  appear when clicked. Backbutton to return to main gallery -->
+
+  <section class="gallery" id="Gallery">
+    <div class="container gallerycontainer overflow-hidden">
+      <div class="row text-center">
+        <div class="col-12">
+          <h4 class="text-bright py-3">Gallery</h4>
+        </div>
+        <div class="col-xs-12 col-lg-4 imageCard leftrightwrapper">
+          <img class="image_img wow animate__animated animate__fadeInLeft" src="./Media/Galleryphotos/sunset-2.jpeg"
+            alt="sunset picture">
+          <div class="image_overlay sunsetOverlay">
+            <div class="image_title">Sunsets</div>
+            <p class="image_phrase">Click to view more</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-4 leftrightwrapper">
+          <div class="pb-3 col-xs-6 col-lg-12 imageCard middlewrapper">
+            <img class="img-fluid image_img wow animate__animated animate__fadeInLeft sunsetMain"
+              src="./Media/Galleryphotos/vencehalloweennew.jpg" alt="djing picture">
+            <div class="image_overlay musicOverlay">
+              <div class="image_title">Music</div>
+              <p class="image_phrase">Click to view more</p>
+            </div>
+          </div>
+          <div class="pt-3 col-xs-6 col-lg-12 imageCard middlewrapper">
+            <img class="img-fluid image_img wow animate__animated animate__fadeInLeft"
+              src="./Media/Galleryphotos/vinschaats.jpg" alt="Iceskatingportret picture">
+            <div class="image_overlay sportOverlay">
+              <div class="image_title">Sports</div>
+              <p class="image_phrase">Click to view more</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-4 imageCard leftrightwrapper">
+          <img class="img-fluid image_img wow animate__animated animate__fadeInLeft"
+            src="./Media/Galleryphotos/lucy.jpeg" alt="Cat portret">
+          <div class="image_overlay petsOverlay">
+            <div class="image_title">Pets</div>
+            <p class="image_phrase">Click to go "ahww"</p>
+          </div>
+        </div>
+        <div class="col-12 backbuttonMain"><button>Back</button></div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+
+  <!-- =========Linking to the bootstrap script, the wow.js, jquery and local js============ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./Scripts/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./Scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+/* default coloring on the page*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(#0b0c10, #282828, #0b0c10);
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* ======= Navbar ================*/
+.navbar {
+  width: 100%;
+  background-color: #0b0c10;
+}
+.navbar-toggler {
+  /* background-color: #3500d3; */
+}
+
+.nav-link.active {
+  /* color: #3500d3 !important; */
+}
+.nav-item .active {
+  background-color: #0b0c10 !important;
+  opacity: 60%;
+  border-radius: 300px;
+}
+.scroll {
+  background-color: transparent !important;
+  transition: 0.8s;
+}
+.scrollbottom {
+  background-color: #0b0c10 !important;
+  transition: 0.8s;
+}
+.zaraffalogo {
+  height: 40%;
+  width: 40%;
+}
+
+/* ============Homepage=============== */
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./Media/home2.jpg);
+  background-size: cover;
+}
+.divider {
+  height: 10vh;
+}
+
+/* ===============About Me================ */
+.aboutmeImage {
+  width: 100%;
+  padding-top: 20vh;
+}
+.aboutmeContainer {
+  position: relative;
+  box-sizing: content-box;
+}
+.aboutme_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.aboutme_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.aboutme_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 47%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutmeText {
+  width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .aboutmeText {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .aboutmeText::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ===============Contact Me================ */
+.connectImage {
+  width: 100%;
+  padding-top: 20vh;
+}
+.connectContainer {
+  position: relative;
+  box-sizing: content-box;
+}
+.connect_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.connect_hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.connect_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 47%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.connectText {
+  width: 40%;
+}
+@media only screen and (max-width: 768px) {
+  .connectText {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .connectText::-webkit-scrollbar {
+    display: none;
+  }
+}
+.form {
+  color: white;
+}
+.name,
+.topic,
+.message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 25%;
+}
+input[value] {
+  text-align: center;
+  color: #282828;
+}
+
+.sesocialscontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60px;
+  justify-content: space-evenly;
+}
+
+.logobuttons {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  filter: brightness(0) invert(1);
+}
+.logobuttons:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 700ms;
+}
+
+/* =====================Music Section======================*/
+.dividerphoto {
+  height: 60vh;
+  width: 100%;
+  background-image: url(./Media/divider.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+.deasy {
+  height: 60vh;
+  width: 100%;
+}
+.vencelogo {
+  height: auto;
+  width: 50%;
+}
+
+/* ==========Improved Gallery============= */
+
+.imageCard {
+  position: relative;
+}
+.image_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.3s;
+}
+
+.image_overlay:hover {
+  opacity: 0.8;
+}
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image_title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.image_phrase {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.leftrightwrapper {
+  height: 500px;
+}
+.middlewrapper {
+  height: 250px;
+}
+.backbuttonMain {
+  visibility: hidden;
+}
+.dividerbottom {
+  height: 5vh;
+}
