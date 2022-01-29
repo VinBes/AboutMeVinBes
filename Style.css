@@ -20,14 +20,9 @@ a:visited {
 .navbar {
   width: 100%;
   background-color: #0b0c10;
-}
-.navbar-toggler {
-  /* background-color: #3500d3; */
+  font-size: 50%;
 }
 
-.nav-link.active {
-  /* color: #3500d3 !important; */
-}
 .nav-item .active {
   background-color: #0b0c10 !important;
   opacity: 60%;
