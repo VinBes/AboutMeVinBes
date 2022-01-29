@@ -37,8 +37,23 @@ a:visited {
   transition: 0.8s;
 }
 .zaraffalogo {
-  height: 15%;
-  width: 15%;
+  height: 17%;
+  width: 17%;
+}
+@media only screen and (max-width: 600px) {
+  .zaraffalogo {
+    height: 40%;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .zaraffalogo {
+    height: 50%;
+    width: 50%;
+  }
+  .navbar {
+    font-size: 15px;
+  }
 }
 
 /* ============Homepage=============== */
@@ -48,23 +63,39 @@ a:visited {
   background-image: url(./Media/home2.jpg);
   background-size: cover;
 }
+@media only screen and (max-width: 600px) {
+  #home {
+    background-position: center;
+  }
+}
 .divider {
   height: 10vh;
 }
 
 /* ===============About Me================ */
-.aboutmeImage {
-  width: 100%;
-  padding-top: 20vh;
-}
+
 .aboutmeContainer {
   position: relative;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 .aboutme_img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .aboutme_img {
+    display: none;
+  }
+  .aboutme_div {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    background-image: url(./Media/aboutme2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 80%;
+  }
 }
 .aboutme_hover {
   position: absolute;
@@ -86,9 +117,26 @@ a:visited {
   align-items: center;
   justify-content: center;
 }
+.aboutmeHeader {
+  font-size: 1.2rem;
+}
 .aboutmeText {
   width: 70%;
+  font-size: 0.7rem;
 }
+@media only screen and (max-width: 600px) {
+  .aboutme_overlay {
+    width: 55%;
+  }
+  .aboutmeHeader {
+    font-size: 0.8rem;
+  }
+  .aboutmeText {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .aboutmeText {
     overflow: scroll;
@@ -99,20 +147,43 @@ a:visited {
     display: none;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .aboutme_overlay {
+    width: 45%;
+  }
+  .aboutmeHeader {
+    font-size: 1.4rem;
+  }
+  .aboutmeText {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
 
 /* ===============Contact Me================ */
-.connectImage {
-  width: 100%;
-  padding-top: 20vh;
-}
+
 .connectContainer {
   position: relative;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 .connect_img {
   display: block;
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .connect_img {
+    display: none;
+  }
+  .connect_div {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    background-image: url(./Media/contactpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20%;
+  }
 }
 .connect_hover {
   position: absolute;
@@ -137,7 +208,11 @@ a:visited {
 .connectText {
   width: 40%;
 }
-@media only screen and (max-width: 768px) {
+.connectText h3 {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1200px) {
   .connectText {
     overflow: scroll;
     -ms-overflow-style: none;
@@ -145,6 +220,24 @@ a:visited {
   }
   .connectText::-webkit-scrollbar {
     display: none;
+  }
+  .connectText h3 {
+    font-size: 0.9rem;
+  }
+  .name,
+  .topic,
+  .message {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .connectText h3 {
+    font-size: 0.8rem;
+  }
+  .name,
+  .topic,
+  .message {
+    font-size: 0.6rem;
   }
 }
 .form {
@@ -166,7 +259,6 @@ input[value] {
 .sesocialscontainer {
   display: flex;
   flex-flow: row nowrap;
-  height: 60px;
   justify-content: space-evenly;
 }
 
@@ -183,6 +275,17 @@ input[value] {
   transform: scale(1.2);
   transition: all 700ms;
 }
+.connecticon {
+  height: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .connecticon {
+    height: 60%;
+  }
+  .sesocialscontainer {
+    justify-content: space-between;
+  }
+}
 
 /* =====================Music Section======================*/
 .dividerphoto {
@@ -192,6 +295,12 @@ input[value] {
   background-size: cover;
   background-position-y: center;
 }
+@media only screen and (max-width: 600px) {
+  .dividerphoto {
+    background-position: 60%;
+  }
+}
+
 .deasy {
   height: 60vh;
   width: 100%;
@@ -199,6 +308,11 @@ input[value] {
 .vencelogo {
   height: auto;
   width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .musicicon {
+    padding: 10px !important;
+  }
 }
 
 /* ==========Improved Gallery============= */
@@ -250,6 +364,14 @@ input[value] {
 
 .leftrightwrapper {
   height: 500px;
+}
+@media only screen and (max-width: 600px) {
+  .leftrightwrapper {
+    padding: 2.5vh 0 !important;
+  }
+  .middlewrapper {
+    padding-bottom: 5vh;
+  }
 }
 .middlewrapper {
   height: 250px;
